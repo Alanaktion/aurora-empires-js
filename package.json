@@ -1,0 +1,27 @@
+{
+  "name": "aurora-empires",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The browser client for Aurora Empires",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "predeploy": "rm -rf dist && parcel build src/index.html --public-url /aurora-empires-js",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alanaktion/aurora-empires-js.git"
+  },
+  "author": "Alan Hardman <alan@phpizza.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alanaktion/aurora-empires-js/issues"
+  },
+  "homepage": "https://github.com/Alanaktion/aurora-empires-js#readme",
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "parcel": "^1.12.4",
+    "xterm": "^4.2.0-vscode1",
+    "xterm-addon-fit": "^0.3.0"
+  }
+}
